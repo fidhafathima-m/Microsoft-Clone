@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Clone</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="images/icons8-microsoft-16.png">
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+   
+<div class="container">
+    <nav class="nav-bar">
+        <img src="images/logo.png" alt="Microsoft Logo" class="logo">
+            
+        <ul class="menu-left">
+            <li><a href="#">Microsoft 365</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Copilot</a></li>
+            <li><a href="#">Windows</a></li>
+            <li><a href="#">Surface</a></li>
+            <li><a href="#">Xbox</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+
+        <ul class="right-menu">
+            <li id="icon"><a href="#">All Microsoft
+            <img src="images/down-chevron.png" alt="down-chevron" style="width: 10px;"></a></li>
+            <li><a href="#"><img src="images/search.png" alt="search"></a></li>
+            <li><a href="#"><img src="images/shopping-cart.png" alt="shopping-cart"></a></li>
+            <li><a href="#"><img src="images/user (1).png" alt="user" style="width: 25px;"></a></li>
+        </ul>
+
+    </nav>
+</div>
+
+<div class="main-area">
+    <div class="slider">
+        <div class="slides">
+            <!-- Slides -->
+            <div class="slide">
+                <img src="images/slide_1.avif" alt="Image 1" class="active">
+                <a href="#"><img src="images/slide_1_1.jpg" class="overlay"></a>
+            </div>
+            <div class="slide">
+                <img src="images/slide_2.avif" alt="Image 2">
+                <a href="#"><img src="images/slide_2_2.jpg" class="overlay"></a>
+            </div>
+        </div>
+
+        <!-- Arrow controls -->
+        <div class="arrow-controls">
+            <label for="radio1" class="prev" onclick="changeMan('prev')">&#10094;</label>
+            <input type="radio" id="radio1" name="slider" class="radio-custom" checked disabled />
+            <label for="radio1" class="custom-radio"></label>
+            
+            <input type="radio" id="radio2" name="slider" class="radio-custom" disabled />
+            <label for="radio2" class="custom-radio"></label>
+            
+            <label for="radio2" class="next" onclick="changeMan('next')">&#10095;</label>
+        </div>
+    </div>
+
+    <section class="icons">
+        <div>
+            <a href="#">
+                <img src="images/Link-List-Icons-Microsoft-365.svg" alt="">
+                <h4>Choose your Microsoft 365</h4>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+            <img src="images//Link-List-Icons-Xbox-Games-Consoles.svg" alt="">
+            <h4>Shop Xbox</h4>
+        </a>
+        </div>
+        <div>
+            <a href="#">
+            <img src="images/Link-List-Icons-Microsoft-365.svg" alt="">
+            <h4>Get Windows 11</h4>
+        </a>
+        </div>
+        <div>
+            <a href="#">
+             <img src="images/Link-List-Icons-Surface-Devices.svg" alt="">
+            <h4>Explore Surface devices</h4>
+        </a>
+        </div>
+    </section>
+
+    <!-- card 1 -->
+     <section class="cards">
+        <div class="card">
+            <img src="images/card_1.avif" alt="">
+            <h2>Maximise the everyday with Microsoft 365</h2>
+            <p>Get online protection, secure cloud storage and innovative apps designed to fit your needs – all in one plan.</p>
+            <button id="btn1">For One Person</button><br />
+            <span id="a-tag">For up to six people &#10095;</span>
+        </div>
+        <div class="card">
+            <a href="#"><img src="images/card_2.webp" alt=""></a>
+            <h2>Xbox Series X</h2>
+            <p>The fastest, most powerful Xbox ever.</p>
+            <a href="#"><button class="btns">Shop Xbox Series X</button></a>
+        </div>
+        <div class="card">
+            <a href="#"><img src="images/card_3.webp" alt=""></a>
+            <h2>Xbox Series S</h2>
+            <p>The fastest, most powerful Xbox ever.</p>
+            <button class="btns">Shop Xbox Series S</button>
+        </div>
+        <div class="card">
+            <a href="#"><img src="images/card_4.avif" alt=""></a>
+            <h2>Designed for life today - and tomorrow</h2>
+            <p>The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you closer to everything you love.</p>
+            <button id="bt2">See if your PC is ready</button>
+        </div>
+     </section>
+
+     <section class="gamepass">
+        <div>
+            <h2>Game Pass</h2>
+            <p>Play new games on day one. Plus, enjoy hundreds<br> of high-quality games with friends on console and<br> PC.</p>
+            <button>Join now</button>
+        </div>
+     </section>
+
+     <!-- card 2 -->
+     <h2 class="bus">For business</h2>
+     <section class="cards-2">
+        <div class="card2">
+            <a href="#"><img src="images/card_2_1.avif" alt="">
+            <h2>Surface for Business</h2>
+            <p>No matter what you do, there’s a Surface to help you do it.</p>
+            <button class="btn2-1">Shop now</button></a>
+        </div>
+        <div class="card2">
+            <a href="#"><img src="images/card_2_2.avif" alt="">
+            <h2>Get Microsoft Teams for your business</h2>
+            <p>Online meetings, chat, real-time collaboration, and shared cloud storage – all in one place.</p></a>
+            <a href="#"><button class="btn2-2">Find the right plan for your business</button></a>
+        </div>
+        <div class="card2">
+            <a href="#"><img src="images/card_2_3.jpeg" alt="">
+            <h2>Windows 11 for business</h2>
+            <p>Designed for hybrid work. Powerful for employees. Consistent for IT. Secure for all.</p>
+            <button class="btn3-1">Learn more</button></a>
+        </div>
+        <div class="card2">
+            <a href="#"><img src="images/card_2_4.avif" alt="">
+            <h2>Microsoft 365 Copilot</h2>
+            <p>Save time and focus on the things that matter most with AI in Microsoft 365 for business.</p>
+            <button class="btn3-2">Learn more</button></a>
+        </div>
+     </section>
+
+     <section class="follow">
+            <p>Follow Microsoft</p>
+            <a href="#"><img src="images/Facebook 2x.avif" alt="" class="iconss"></a>
+            <a href="#"><img src="images/X_icon.webp" alt="" class="iconss"></a>
+            <a href="#"><img src="images/YouTube 2x.webp" alt="" class="iconss"></a>
+        </section>
+        
+        <a href="#" class="top" id="backToTop"><img class="arrow-icon" src="images/arrow.png" alt="">  Back to top</a>
+
+        <!-- links -->
+
+        <section class="links">
+            <div class="links-inner">
+                <ul>
+                    <li><h3>What's new</h3></li>
+                    <li><a href="#">Surface Pro</a></li>
+                    <li><a href="#">Surface Laptop</a></li>
+                    <li><a href="#">Microsoft Copilet</a></li>
+                    <li><a href="#">Microsoft 365</a></li>
+                    <li><a href="#">Explore Microsoft Products</a></li>
+                    <li><a href="#">Windows 11 apps</a></li>
+                </ul>
+                <ul>
+                    <li><h3>Microsoft Store</h3></li>
+                    <li><a href="#">Account profile</a></li>
+                    <li><a href="#">Download center</a></li>
+                    <li><a href="#">Microsoft store support</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Order tracking</a></li>
+                </ul>
+                <ul>
+                    <li><h3>Education</h3></li>
+                    <li><a href="#">Microsoft in education</a></li>
+                    <li><a href="#">Devices for education</a></li>
+                    <li><a href="#">Microsoft Teams for education</a></li>
+                    <li><a href="#">Microsoft 365 education</a></li>
+                    <li><a href="#">Office edcation</a></li>
+                    <li><a href="#">Education training and development</a></li>
+                    <li><a href="#">Deals for students and parents</a></li>
+                    <li><a href="#">Azure or education</a></li>
+                </ul>
+                <ul class="busi">
+                    <li><h3>Business</h3></li>
+                    <li><a href="#">Microsoft Cloud</a></li>
+                    <li><a href="#">Microsoft Security</a></li>
+                    <li><a href="#">Azure</a></li>
+                    <li><a href="#">Dynamics 365</a></li>
+                    <li><a href="#">Microsoft 365</a></li>
+                    <li><a href="#">Microsoft Advertising</a></li>
+                    <li><a href="#">Microsoft 365 Copilet</a></li>
+                    <li><a href="#">Microsoft Teams</a></li>
+                </ul>
+                <ul class="dev">
+                    <li><h3>Developer & IT</h3></li>
+                    <li><a href="#">Developer Center</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Microsoft Learn</a></li>
+                    <li><a href="#">Microsoft Tech Community</a></li>
+                    <li><a href="#">Azure Marketplace</a></li>
+                    <li><a href="#">AppSource</a></li>
+                    <li><a href="#">Microsoft Power Platform</a></li>
+                    <li><a href="#">Visual Studio</a></li>
+                </ul>
+                <ul class="com">
+                    <li><h3>Company</h3></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">About Microsoft</a></li>
+                    <li><a href="#">Comapny news</a></li>
+                    <li><a href="#">Privacy at Microsoft</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+        </section>
+         
+        <footer class="main-footer">
+            <div class="inner-footer">
+                <ul id="left-footer">
+                    <li><a href="#"><img id="globe" src="images/globe.png" alt=""> English (India)</a></li>
+                    <li><a href="#"><img id="toggle" src="images/toggle.jpg" alt=""> Your Privacy Choices</a></li>
+                    <li><a href="#">Consumer Health Privacy</a></li>
+                </ul>
+                    
+                <ul id="right-footer">
+                    <li><a href="#">Contact Microsoft</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">About our ads</a></li>
+                    <li><a href="#">&copy;Microsoft 2024</a></li>
+                </ul>
+            </div>
+        </footer>
+</div>
+
+
+<!-- scripts -->
+<script>
+
+window.onscroll = function() {
+    const backToTop = document.getElementById('backToTop');
+    
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTop.style.display = "flex"; // Show link
+    } else {
+        backToTop.style.display = "none"; // Hide link
+    }
+};
+
+let slides = document.querySelector('.slides');
+let radios = document.querySelectorAll('.radio-custom');
+let currentIndex = 0;
+const slideDuration = 10000; // Total duration for all slides (10 seconds)
+
+// Clone the first slide and append it to the end
+const firstSlide = slides.firstElementChild.cloneNode(true);
+slides.appendChild(firstSlide);
+
+function changeSlide() {
+    currentIndex++;
+    
+    // If we've reached the cloned last slide, reset to the first slide
+    if (currentIndex >= radios.length + 1) {
+        currentIndex = 0;
+        slides.style.transition = 'none'; // Disable transition for instant jump
+        slides.style.transform = `translateX(0)`; // Jump to the first slide
+        setTimeout(() => {
+            slides.style.transition = 'transform 0.5s ease'; // Re-enable transition
+            updateSlide(); // Update the visible slide to the first real slide
+        }, 50); // Short delay to allow for the jump
+    } else {
+        updateSlide();
+    }
+}
+
+function changeMan(direction) {
+    if (direction === 'next') {
+        currentIndex++;
+        if (currentIndex >= radios.length + 1) {
+            currentIndex = 0; // Loop back to the first slide
+        }
+    } else if (direction === 'prev') {
+        currentIndex = Math.max(0, currentIndex - 1); // Move to the previous slide, but not below 0
+    }
+
+    updateSlide();
+}
+
+function updateSlide() {
+    // Update the transform property to show the current slide
+    slides.style.transform = `translateX(${-currentIndex * 100}%)`; // 100% for each slide
+    if (currentIndex < radios.length) {
+        radios[currentIndex].checked = true; // Update the radio button
+    } else {
+        radios[0].checked = true; // Ensure the first radio button is checked when showing the cloned first slide
+    }
+}
+
+// Initial call to display the first slide
+changeSlide();
+
+// Change slide every 10 seconds
+setInterval(changeSlide, slideDuration);
+
+// Event listeners for manual controls
+document.getElementById('prev').addEventListener('click', () => changeMan('prev'));
+document.getElementById('next').addEventListener('click', () => changeMan('next'));
+
+</script>
+
+
+</body>
+</html>
